@@ -54,9 +54,9 @@ body {
     outline: none;
 }
 
-.link:focus{
+/* .link:focus{
     text-decoration: underline;
-}
+} */
 
 section {
     padding-top: 94px;
@@ -330,34 +330,30 @@ header nav li:not(:last-of-type) {
 }
 
 .our-customers-section .icon-wrapper {
+    width: 170px;
+    height: 92px;
+}
+
+.our-customers-section .link{
     display: flex;    
     justify-content: center;
     align-items: center;
 
-    width: 170px;
-    height: 92px;
-
+    width: 100%;
+    height: 100%;
+    
     border: 1px solid var(--icon-gray);
     border-radius: 4px;
     fill: var(--icon-gray);
 }
 
-.our-customers-section .link{
-    display: block;
-
-    width: 100%;
-    height: 100%;
-
-    padding: 15px 31px;
-}
-
 .our-customers-section .icon {
-    fill: inherit;
     width: 106px;
     height: 60px;
 }
 
-.our-customers-section .icon-wrapper:hover{
+.our-customers-section .link:focus,
+.our-customers-section .link:hover{
     border-color: var(--brand-blue);
     fill: var(--brand-blue);
 }
@@ -368,16 +364,15 @@ header nav li:not(:last-of-type) {
 
 .portfolio-section .cards,
 .our-team-section .cards {
-    padding: 0;
-    margin: 0;
-
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: space-between; */
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+
+    padding: 0;
+    margin: 0;
 }
 
 .card {
@@ -401,10 +396,6 @@ header nav li:not(:last-of-type) {
     border-radius: 0px 0px 4px 4px;
     margin: 0;
 }
-
-/* .our-team-section .card:not(:last-of-type) {
-    margin: 0 30px 0 0;
-} */
 
 .our-team-section .card > img{
     width: 270px;
@@ -470,6 +461,7 @@ header nav li:not(:last-of-type) {
     height: 20px;
 }
 
+.our-team-section .link:focus,
 .our-team-section .link:hover {
     background-color: var(--brand-blue);
     fill: var(--white);
@@ -586,7 +578,7 @@ footer .container{
     color: var(--transparent-gray);
 }
 
-.footer-contacts li:first-of-type>a {
+.footer-contacts li:first-of-type {
     color: var(--white);
 }
 
@@ -634,6 +626,7 @@ footer h3 {
     height: 20px;
 }
 
+.footer-social-links .link:focus,
 .footer-social-links .link:hover {
     background-color: var(--brand-blue);
 }
